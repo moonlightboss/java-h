@@ -41,7 +41,7 @@ public class MathOperations {
         double calculatePercentage1 = calculatePercentage(100, 25);
         System.out.println(calculatePercentage1);
         double calculatePercentage2 = calculatePercentage(-100, 25);
-        System.out.println("Число отрицательное или равно нулю "+calculatePercentage2);
+        System.out.println(calculatePercentage2);
 
         double celsiusToFahrenheit1 = celsiusToFahrenheit(100);
         System.out.println(celsiusToFahrenheit1);
@@ -59,7 +59,12 @@ public class MathOperations {
         return x * y;
     }
     public static double divide(int x, int y) {
-        return x / y;
+        if(y == 0){
+            return 0.0;
+        }
+        else{
+            return (double) x / y;
+        }
     }
     public static double findMax(double a, double b) {
         if (a > b){
@@ -80,11 +85,16 @@ public class MathOperations {
     }
 
     public static double convertSecondsToMinutes(int seconds) {
-        return seconds / 60;
+        return (double) seconds / 60;
     }
 
     public static double averageSpeed(double distance, double time){
-        return (distance / time);
+        if (time == 0){
+            return 0.0;
+        }
+        else{
+            return (distance / time);
+        }
     }
     public static double findHypotenuse(double a, double b){
         return Math.sqrt((a * a)+(b * b));
@@ -94,11 +104,11 @@ public class MathOperations {
         return 2 * Math.PI * radius;
     }
     public static double calculatePercentage(double total, double part){
-        if(total > 0){
-            return (part / total) * 100.0;
+        if(total == 0){
+            return 0.0;
         }
         else {
-            return 0.0;
+            return (part / total) * 100.0;
         }
     }
     public static double celsiusToFahrenheit(double c){
