@@ -1,20 +1,24 @@
 package practice_2;
 
 public class Laptop {
-    String brand;
-    double price;
+    private String brand;
+    private double price;
 
-    String getBrand(){
-        return this.brand;
+    public Laptop(String brand, double price) {
+        this.brand = brand;
+        this.price = price;
     }
-    double getPrice(){
-        return this.price;
+    public String getBrand() {
+        return brand;
     }
-
-    void setBrand(String brand){
+    public void setBrand(String brand) {
         this.brand = brand;
     }
-    void setPrice(double price){
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
         this.price = price;
     }
     public void printInfo(){

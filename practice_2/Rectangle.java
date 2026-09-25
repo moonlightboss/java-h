@@ -1,24 +1,27 @@
 package practice_2;
 
 public class Rectangle {
-    int widht;
-    int height;
+    private double width;
+    private double height;
 
-    public Rectangle(int widht, int height){
-        this.widht = widht;
+    public Rectangle(double width, double height) {
+        this.width = width;
         this.height = height;
     }
-    int getWidht(){
-        return this.widht;
-    }
-    int getHeight(){
-        return this.height;
-    }
-    void setWidht(int widht){
-        this.widht = widht;
+
+    public double getWidth() {
+        return width;
     }
 
-    public int calculateArea(){
-       return widht * height;
+    public double getHeight() {
+        return height;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+    public double calculateArea() {
+        return width * height;
     }
 }

@@ -10,8 +10,8 @@ public class Main {
         car.print();
 
         Rectangle rectangle = new Rectangle(5, 20);
-        rectangle.setWidht(10);
-        int S = rectangle.calculateArea();
+        rectangle.setWidth(10);
+        double S = rectangle.calculateArea();
         System.out.println("Площадь " + S);
 
 
@@ -38,9 +38,9 @@ public class Main {
         group.printInfo();
 
         Circle circle = new Circle(3);
-        double s = circle.calculateArea(3);
+        double s = circle.calculateArea();
         System.out.println("Первое значение " + s);
-        double c = circle.calculateCircumference(8);
+        double c = circle.calculateCircumference();
         System.out.println("Второе " + c);
 
         Teacher teacher = new Teacher("Yana","English");
@@ -55,7 +55,7 @@ public class Main {
         product.applyDiscount(50);
         product.printInfo();
 
-        Laptop laptop = new Laptop();
+        Laptop laptop = new Laptop("Lenovo", 50000);
         laptop.setPrice(1000);
         laptop.printInfo();
     }
