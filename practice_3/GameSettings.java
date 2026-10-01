@@ -13,8 +13,8 @@ public class GameSettings {
     public static void setMaxPlayers(int maxPlayers) {
         GameSettings.maxPlayers = maxPlayers;
     }
-    public int addPlayer(int currentPlayers){
-        return this.currentPlayers = currentPlayers;
+    public void addPlayer(){
+        currentPlayers++;
     }
     public void printGameStatus(){
         System.out.println("Статус игры: Текущее количество игроков "+ currentPlayers + " I " + " Максимальное количество игроков: " + maxPlayers);

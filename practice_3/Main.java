@@ -38,15 +38,18 @@ public class Main {
         s2.printStudentInfo();
         s3.printStudentInfo();
 
-        GameSettings g1 = new GameSettings(20, 0);
-        GameSettings g2 = new GameSettings(25, 5);
-        g1.printGameStatus();
-        GameSettings.setMaxPlayers(30);
-        g1.printGameStatus();
-        g1.addPlayer(1);
+        GameSettings g1 = new GameSettings(30, 10);
+        GameSettings g2 = new GameSettings(30, 5);
         g1.printGameStatus();
         g2.printGameStatus();
+        g1.addPlayer();
+        g1.printGameStatus();
+        g1.addPlayer();
+        g1.printGameStatus();
         GameSettings.setMaxPlayers(40);
+
+        g1.printGameStatus();
+        g2.printGameStatus();
 
 
         Person p1 = new Person("Ivan", "Ivanov", "123-456-7890");

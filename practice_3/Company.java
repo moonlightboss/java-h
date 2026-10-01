@@ -2,7 +2,7 @@ package practice_3;
 
 public class Company {
     static String companyName = "FirstCorp";
-    final int employeeID; //= 22;
+    final int employeeID; //= 22; ошибка: нельзя менять final поле — проверка
     private String employeeName;
 
     public Company(int employeeID, String employeeName){
